@@ -5,13 +5,21 @@
 //  Created by Grant Spraker on 1/11/22.
 //
 
-import UIKit
+import MapKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    @IBOutlet weak var mapView: MKMapView!
+    
+    let locationManager = CLLocationManager()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let locationManager.requestWhenInUseAuthorization()
+        mapView.showUserLocation = true
+
     }
 
 
