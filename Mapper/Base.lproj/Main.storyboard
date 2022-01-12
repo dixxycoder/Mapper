@@ -29,7 +29,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mlq-DE-zSR" secondAttribute="bottom" id="xoM-sZ-c0R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6rD-12-ubc"/>
+                    <navigationItem key="navigationItem" id="6rD-12-ubc">
+                        <barButtonItem key="leftBarButtonItem" title="Zoom" id="Whm-fO-13o">
+                            <connections>
+                                <action selector="ZoomButton:" destination="BYZ-38-t0r" id="8AO-wU-vWx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="bzt-4n-pHn"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="Mlq-DE-zSR" id="xlk-ss-Nzv"/>
                     </connections>
