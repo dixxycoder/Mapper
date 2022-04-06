@@ -5,6 +5,8 @@
   Created by Grant Spraker on 1/11/22.
 */
 
+import UIKit
+
 import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate
@@ -34,6 +36,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate
      currentLocation = locations[0]
     }
     
+    
     @IBAction func ZoomButton(_ sender: UIBarButtonItem)
     {
         let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
@@ -41,6 +44,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate
         let region = MKCoordinateRegion(center: center, span: coordinateSpan)
         mapView.setRegion(region, animated: true)
     }
+    
     
     @IBAction func whenSearch(_ sender: Any)
     {
